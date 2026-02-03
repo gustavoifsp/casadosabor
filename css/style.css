@@ -209,6 +209,37 @@ body {
 
 .btn-secondary i { font-size: 1.3rem; }
 
+/* Hero WhatsApp Button */
+.btn-whatsapp-hero {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: white;
+    padding: 1.5rem 3rem;
+    border-radius: 60px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 40px rgba(37, 211, 102, 0.4);
+    animation: pulse-whatsapp 2s infinite;
+}
+
+.btn-whatsapp-hero:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 20px 60px rgba(37, 211, 102, 0.5);
+}
+
+.btn-whatsapp-hero i {
+    font-size: 1.8rem;
+}
+
+@keyframes pulse-whatsapp {
+    0%, 100% { box-shadow: 0 10px 40px rgba(37, 211, 102, 0.4); }
+    50% { box-shadow: 0 10px 60px rgba(37, 211, 102, 0.6); }
+}
+
 @keyframes shake {
     0%, 100% { transform: rotate(0); }
     25% { transform: rotate(-10deg); }
