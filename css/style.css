@@ -440,6 +440,10 @@ body {
     font-size: 1.1rem;
 }
 
+.chef-content p strong {
+    color: var(--gold);
+}
+
 .chef-quote {
     background: rgba(255,255,255,0.05);
     border-left: 4px solid var(--gold);
@@ -447,6 +451,31 @@ body {
     border-radius: 0 16px 16px 0;
     font-style: italic;
     color: rgba(255,255,255,0.9);
+}
+
+/* Chef Varago - Alternate Style */
+.chef-varago {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2D3436 100%);
+}
+
+.chef-varago::before {
+    left: 0;
+    right: auto;
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+}
+
+.chef-grid.reverse {
+    direction: rtl;
+}
+
+.chef-grid.reverse > * {
+    direction: ltr;
+}
+
+@media (max-width: 767px) {
+    .chef-grid.reverse {
+        direction: ltr;
+    }
 }
 
 /* ===== MENU SECTION ===== */
